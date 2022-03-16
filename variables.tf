@@ -26,11 +26,13 @@ variable "resource_group_name" {
 }
 
 variable "databricks_service_name" {
-  description = "The databricks service name that was provided"
+  description = "The databricks service name"
   type        = string
   default     = "databricks_test_service"
 }
 
+
+//Three different pircing tiers
 variable "databricks_sku_pricing_tier" {
   description = "Pricing Tier for Databricks Service "
   type        = string
