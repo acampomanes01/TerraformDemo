@@ -21,7 +21,7 @@ resource "azurerm_databricks_workspace" "example" {
 
   tags = {
     Environment = "Test"
-    Autor        = "dmunozpardo"
+    Autor        = "acampomanes"
   }
 
 
