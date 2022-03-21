@@ -5,7 +5,6 @@ Azure Databricks Service Module
 This module is used to create an Azure Databricks Service.
 
 ## Variables
-
 When using the module, you want to specify this variables on the "variables.tf" file:
 - <a name="azure_new_resource_group"></a> [azure_new_resource_group](#azure_new_resource_group): In this variable you must enter the necessary id to connect the terraform files with the Azure Databricks repository following this example:
 EXAMPLE:
@@ -35,3 +34,8 @@ variable "azure_new_resource_group" {
 | <a name="resource_group_name"></a> [resource_group_name](#resource_group_name)                      | The resource group name                                                          | `string`       | `TerraformDatabricks`|    yes   |
 | <a name="databricks_service_name"></a> [databricks_service_name](#databricks_service_name)          | The databricks service name                                                      | `string`       | `databricks_test_service` |    yes    |
 | <a name="databricks_sku_pricing_tier"></a> [databricks_sku_pricing_tier](#databricks_sku_pricing_tier)|In this variable you must enter the service's piercing tier. There are 3 options, the Trial (14 days free), the basic and the premium.| `string`| `trial`| no |
+
+## Tags
+The tags are found in the "main.tf" file and give extra information about the project. The tags of this project are:
+- <a name="enviroment"></a> [enviroment](#enviroment): It shows in what enviroment this project is used.
+- <a name="author"></a> [author](#author): It shows the author´s name.

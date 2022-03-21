@@ -4,25 +4,13 @@ resource "azurerm_resource_group" "rg" {
   location = var.location
 
   tags = {
-
-    "Topic"       = "Innovation"
-    "Category"    = "Terraform"
-    "SubCategory" = "Introduction"
-    "Level"       = "Beginner"
   }
 }
 
 
 resource "azurerm_databricks_workspace" "example" {
-  name                = var.databricks_service_name
-  resource_group_name = var.resource_group_name
-  location            = var.location
-  sku                 = var.databricks_sku_pricing_tier
-
-  tags = {
-    Environment = "Test"
-    Autor        = "acampomanes"
-  }
-
-
+  name                = var.azure_databricks_variables["name"]
+  resource_group_name = var.azure_databricks_variables["resource_group_name"]
+  location            = var.azure_databricks_variables["location"]
+  sku                 = var.azure_databricks_variables["sku_piercing_tier"]
 }
